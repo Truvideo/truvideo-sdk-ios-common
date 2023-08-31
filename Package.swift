@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let packageVersion = "0.0.2"
+let packageVersion = "0.0.3"
 
 let package = Package(
     name: "Common",
