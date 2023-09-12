@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let packageVersion = "0.0.6"
+let packageVersion = "0.0.7"
 let sharedPackageVersion = "0.0.2"
 
 let package = Package(
@@ -12,7 +12,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "Common",
-            targets: ["Common"]),
+            targets: ["CommonTargets"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -32,7 +32,7 @@ let package = Package(
             checksum: "5028e25b25b24e6f35fbe4484dfc438a31345a9d5bf5666640e99849cfb497cb"
         ),
         .target(
-            name: "TruvideoSdkTargets",
+            name: "CommonTargets",
             dependencies: [
                 .target(name: "Common"),
                 .target(name: "Shared")
