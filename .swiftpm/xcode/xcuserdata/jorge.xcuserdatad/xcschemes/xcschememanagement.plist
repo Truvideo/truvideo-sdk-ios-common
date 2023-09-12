@@ -17,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>Common</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>truvideo-sdk-ios-common</key>
 		<dict>
 			<key>primary</key>
