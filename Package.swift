@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let packageVersion = "0.0.3"
+let packageVersion = "0.0.4"
 
 let package = Package(
     name: "Shared",
@@ -23,7 +23,7 @@ let package = Package(
         .binaryTarget(
             name: "Shared",
             url: "https://github.com/Truvideo/truvideo-sdk-ios-common/releases/download/\(packageVersion)/shared.xcframework.zip",
-            checksum: "5028e25b25b24e6f35fbe4484dfc438a31345a9d5bf5666640e99849cfb497cb"
+            checksum: "30cc3a6dd6d5819f235eb27c18b1cc4002f1b67d5cba33a789a6a46f1e06050d"
         ),
         .target(
             name: "SharedTargets",
