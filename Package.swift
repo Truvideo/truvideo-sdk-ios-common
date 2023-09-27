@@ -3,14 +3,14 @@
 
 import PackageDescription
 
-let packageVersion = "0.0.4"
+let packageVersion = "0.0.18"
 
 let package = Package(
-    name: "Shared",
+    name: "shared",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "Shared",
+            name: "shared",
             targets: ["SharedTargets"]),
     ],
     dependencies: [
@@ -21,14 +21,14 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
-            name: "Shared",
+            name: "shared",
             url: "https://github.com/Truvideo/truvideo-sdk-ios-common/releases/download/\(packageVersion)/shared.xcframework.zip",
-            checksum: "30cc3a6dd6d5819f235eb27c18b1cc4002f1b67d5cba33a789a6a46f1e06050d"
+            checksum: "4445be410f9722f25088b0ff1b43af28788a19a286ab18b51e856ac25d92b6a6"
         ),
         .target(
             name: "SharedTargets",
             dependencies: [
-                .target(name: "Shared")
+                .target(name: "shared")
             ],
             path: "Sources"
         )
