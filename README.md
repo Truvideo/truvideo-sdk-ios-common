@@ -1,3 +1,3 @@
-# Truvideo SDK iOS Common
+# Truvideo SDK - iOS shared
 
 A description of this package.
