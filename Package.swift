@@ -4,24 +4,24 @@
 import PackageDescription
 
 let package = Package(
-    name: "Shared",
+    name: "Common",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "Shared",
-            targets: ["SharedTargets"]),
+            name: "Common",
+            targets: ["CommonTargets"]),
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
-            name: "Shared",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-shared/releases/download/0.0.67/shared.xcframework.zip",
-            checksum: "c39cb1fb40f568b7329e46ab357c7f224addda6f24003b3f100d8e1854263040"
+            name: "Common",
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-common/releases/download/0.0.68/shared.xcframework.zip",
+            checksum: "563252e2b56a66dc0b5d9d313fa33a361a83a5b5db98ce740d47eeb0023ddc09"
         ),
         .target(
-            name: "SharedTargets",
+            name: "CommonTargets",
             dependencies: [
-                .target(name: "Shared")
+                .target(name: "Common")
             ],
             path: "Sources"
         )
