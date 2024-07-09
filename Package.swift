@@ -16,7 +16,7 @@ let package = Package(
         .binaryTarget(
             name: "Common",
             url: "https://github.com/Truvideo/truvideo-sdk-ios-common/releases/download/0.0.72/shared.xcframework.zip",
-            checksum: "7776a23f0a2fc8c6c954483d2856e9ec7aad6d641d5ef09c492497bb24170183"
+            checksum: "731573897fa8280cb9f3aed71aca4d1ed210157e4982c4f31f4a0d4fa341af3f"
         ),
         .target(
             name: "CommonTargets",
